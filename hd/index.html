@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2; 
+        }
+        
+        nav {
+            background-color: #000066;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            position: relative;
+            width: 150px;
+        }
+
+        nav ul li a {
+            display: block;
+            padding: 10px;
+            color: #ffffff; /* Chữ */
+            text-decoration: none;
+            white-space: nowrap;
+        }
+
+        nav ul li:hover {
+            background-color: #000099;
+            min-width: 290px;
+        }
+
+        nav ul li:hover > ul {
+            display: block;
+        }
+
+        nav ul ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            text-align: left;
+            background-color: #fff;
+            min-width: 290px; /* Độ rộng tối thiểu của submenu */
+            padding: 10px 0; /* Thêm padding để tạo khoảng trống xung quanh nội dung */
+            white-space: nowrap;
+        }
+
+
+        nav ul ul li {
+            display: block;
+        }
+
+        nav ul ul li a {
+            padding: 10px 30px;
+            color: #000000;
+        }
+        nav ul ul li a:hover {
+            color: #ffffff; /* Màu chữ khi rê chuột vào submenu */
+        }
+
+
+        nav ul ul li:hover {
+            background-color: #000099;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Trang chủ</a></li>
+          <li><a href="#">Giới thiệu</a>
+                <ul class="submenu">
+                    <li><a href="#">Sứ mệnh - Tầm nhìn - Gía trị cốt lõi</a></li>
+                    <li><a href="#">Chiến lược phát triển trường</a></li>
+                    <li><a href="#">Bộ nhận diện thương hiệu</a></li>
+                    <li><a href="#">Lịch sử phát triển và hình thành</a></li>
+                </ul>
+          </li>
+          <li><a href="#">Tổ chức bộ máy</a>
+                <ul class="submenu">
+                    <li><a href="#">Hội đồng trường</a></li>
+                    <li><a href="#">Ban giám hiệu</a></li>
+                    <li><a href="#">Hội đồng Khoa học và Đào tạo</a></li>
+                    <li><a href="#">Khoa đào tạo</a></li>
+                    <li><a href="#">Viện đào tạo</a></li>
+                    <li><a href="#">Phòng chức năng</a></li>
+                    <li><a href="#">Đơn vị nghiên cứu, phục vụ đòa tạo</a></li>
+                    <li><a href="#">Các tổ chức Đảng và Đoàn thể</a></li>
+                </ul> 
+            </li>
+            <li>
+                <a href="#">Đào tạo</a>
+                <ul class="submenu">
+                    <li><a href="#">Đại học chính quy</a></li>
+                    <li><a href="#">Đại học vừa làm vừa học</a></li>
+                    <li><a href="#">Liên kết quốc tế</a></li>
+                    <li><a href="#">Sau đại học</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Nghiên cứu</a>
+                <ul class="submenu">
+                    <li><a href="#">Hội nghị - Hội thảo</a></li>
+                    <li><a href="#">Hợp tác quốc tế</a></li>
+                    <li><a href="#">Khoa học công nghê</a></li>
+                </ul>
+              </li>
+            <li><a href="#">Tra cứu</a>
+                <ul class="submenu">
+                    <li><a href="#">Chương trình đào tạo</a></li>
+                    <li><a href="#">Văn bằng chứng chỉ</a></li>
+                    <li><a href="#">Bảng vàng thành tích</a></li>
+                </ul>
+              </li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
